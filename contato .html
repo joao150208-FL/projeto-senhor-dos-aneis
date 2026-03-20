@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title> <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <div  id="titulo_principal">
+        <h1>O Senhor dos Anéis</h1>
+        <h2>Uma das trilogias mais famosas do cinema</h2>
+        <nav>
+            <a href="index.html" >Home</a>
+            <a href="sinope.html" >Sinope</a>
+            <a href="imagem.html" >Imagem do filme</a>
+            <a href="personagens-principais.html" >Personagem principais</a>
+            <a href="informações.html" >informações</a>
+            <a href="curiosidades.html" >curiosidades</a>
+            <a href="impacto-cultural.html" >impacto cultural</a>
+            <a href="contato .html">Contato</a>
+        </nav>
+    </div>
+       <h2 class="titulo_segundario">Entre em contato </h2>
+       <form action="processo.php" method="POST" autocomplete="off">
+
+        <label for="nomepessoa"> Nome:</label>
+        <input type="text" name="nomepessoa"
+        id="nomepessoa" minlength="3" maxlength="15" required
+        placeholder="Informe seu nome"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" 
+        required placeholder="Informe seu email"><br><br>
+
+        <label for="ano">Ano de nascimento:</label>
+        <input type="numer" id="ano" name="ano" max="2026" min="1900"
+        placeholder="Informe seu ano de nacença"><br><br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" name="telefone" id="telefone"
+        placeholder="Informe seu telefone"><br><br>
+
+        <label for="github">Informe seu github:</label>
+        <input type="url" name="github" id="github"
+        placeholder="Informe seu github"><br><br>
+
+        <label for="senha">Informe sua senha:</label>
+        <input type="password" id="senha" name="senha"
+        placeholder="Informe sua senha" required><br><br>
+
+        <label for="aquivo">Anexe um arquivo:</label>
+        <input type="file" id="arquivo" name="arquivo"><br><br>
+
+        <label for="cor">Escolha uma cor:</label>
+        <input type="color" id="cor" name="cor"><br><br>
+        
+        <fieldset>
+            <legend>Campos de tempo</legend>
+            <label for="data">Informe a data</label>
+            <input type="date" name="data" id="data" placeholder="Informe a data de hoje"><br><br>
+
+            <label for="mes">Infome o mes</label>
+            <input type="month" name="mes" id="mes" placeholder="Informe o mes"><br><br>
+
+            <label for="semana">Infome a semana</label>
+            <input type="week" name="semana" id="semana" ><br><br>
+
+            <label for="hora">Infome a hora</label>
+            <input type="time" name="hora" id="hora" placeholder="Informe a hora"><br><br>
+        </fieldset><br><br>
+        
+        <label for="pesquisa">Pesquisa:</label>
+        <input type="search" id="pesquisa" name="pesquisa"><br><br>
+
+        <label for="descricao">Informe aqui o que vc gosta dos filmes:</label><br>
+        <textarea cols="30" rows="10" name="descricao" id="descricao"></textarea><br><br>
+
+        <fieldset>
+            <legend>Infome seu filme favorito</legend>
+            <input type="radio" name="filme" id="filme1" value="filme 1"><label for="filme1">Filme 1</label><br>
+
+            <input type="radio" name="filme" id="filme2" value="filme 2"><label for="filme2">Filme 2</label><br>
+
+            <input type="radio" name="filme" id="filme3" value="filme 3"><label for="filme3">Filme 3</label><br>
+        </fieldset><br><br>
+
+        <select>
+            <option value="filme 1">filme 1</option>
+            <option value="filme 2">filme 2</option>
+            <option value="filme 3">filme 3</option>
+        </select><br><br>
+
+        <button type="reset">Limpar</button>
+
+        <br><br>
+        <button type="submit">Enviar</button>
+
+       </form>
+</body>
+</html>
