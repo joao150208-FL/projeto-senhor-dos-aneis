@@ -90,6 +90,48 @@
             <option value="filme 3">filme 3</option>
         </select><br><br>
 
+        
+        <select name="lista" id="lista_suspensa">
+            <optgroup label="Teste de legenda no combobox">
+                <option value="teste 1">teste 1</option>
+                <option value="teste 2">teste 2</option>
+                <option value="teste 3">teste 3</option>
+            </optgroup>
+
+            <optgroup label="Teste de legenda no combobox 2">
+                <option value="teste 1">teste 4</option>
+                <option value="teste 2">teste 5</option>
+                <option value="teste 3">teste 6</option>
+            </optgroup>
+        </select><br><br>
+        
+        <label for="nivel">escolha o nivel</label>
+        <input type="range" max="1o" min="1" id="nivel" name="nivel"><br>
+
+        <fieldset>
+            <legend>Desenvolvimento para internet</legend>
+            <label for=""><input type="checkbox" name="php">PHP</label>
+            <label for=""><input type="checkbox" name="html">HTML</label>
+            <label for=""><input type="checkbox" name="css">CSS</label>
+            <label for=""><input type="checkbox" name="js">JS</label>
+        </fieldset><br>
+        
+
+        <!--Possiveis ganhadores da copa do mundo-->
+        <input type="text" id="busca_datalist" list="paises">
+        <datalist id="paises">
+            <option>Brasil</option>
+            <option>França</option>
+            <option>Portugal</option>
+            <option>Argentina</option>
+            <option>Inglaterra</option>
+            <option>Alemanha</option>
+        </datalist>
+
+        <audio controls>
+            <source src="" type="audio/mp3">
+        </audio>
+
         <button type="reset">Limpar</button>
 
         <br><br>
