@@ -6,6 +6,7 @@
     <title>Contato</title> <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!--INICIO----TRABALHO-->
      <div  id="titulo_principal">
         <h1>O Senhor dos Anéis</h1>
         <h2>Uma das trilogias mais famosas do cinema</h2>
@@ -20,23 +21,95 @@
             <a href="contato .html">Contato</a>
         </nav>
     </div>
-       <h2 class="titulo_segundario">Entre em contato </h2>
+       <h2 class="titulo_segundario">Contato com a Terra Média </h2>
        <form action="processo.php" method="POST" autocomplete="off">
 
-        <label for="nomepessoa"> Nome:</label>
+        <p>Envie sua menssagem diretamente para o conselho de Elrond</p>
+
+        <label for="nomepessoa"> Nome na Terra média:</label>
         <input type="text" name="nomepessoa"
         id="nomepessoa" minlength="3" maxlength="15" required
-        placeholder="Informe seu nome"><br><br>
+        placeholder="Ex: Aragorn"><br><br>
 
-        <label for="email">Email:</label>
+        <label for="email">Corvo eletrônico (Email):</label>
         <input type="email" name="email" id="email" 
-        required placeholder="Informe seu email"><br><br>
+        required><br><br>
 
         <label for="ano">Ano de nascimento:</label>
-        <input type="numer" id="ano" name="ano" max="2026" min="1900"
-        placeholder="Informe seu ano de nacença"><br><br>
+        <input type="numer" id="ano" name="ano" max="2026" min="1900"><br><br>
 
-        <label for="telefone">Telefone:</label>
+        <fieldset>
+            <legend>Qual é sua raça?</legend>
+            <input type="radio" name="humano" id="humano" value="humano"><label for="humano">Humano</label>
+            <input type="radio" name="elfo" id="elfo" value="elfo"><label for="elfo">Elfo</label>
+            <input type="radio" name="anão" id="anão" value="anão"><label for="anão">Anão</label>
+            <input type="radio" name="Hobbit" id="hobbit" value="hobbit"><label for="hobbit">Hobbit</label>
+        </fieldset><br><br>
+
+        <label for="filme">Escolha seu filme favorito:</label>
+        <select name="filme" id="filme">
+            <option value="sociedade">A sociedade do anel</option>
+            <option value="torres">As duas torres</option>
+            <option value="Retorno" selected>O Retornodo Rei</option>
+        </select><br><br>
+
+        <label for="filme">Escolha um local da terra média:</label>
+        <select name="filme" id="filme">
+            <optgroup label="Reinos dos homens">
+                <option value="gondor">Gondor</option>
+                <option value="torres">Rohan</option>
+            </optgroup>
+
+            <optgroup label="Terras élficas">
+                <option value="valfenda">Valfenda</option>
+                <option value="lothlórien">Lothlórien</option>
+            </optgroup>
+
+            <optgroup label="Outros">
+                <option value="mordor">Mordor</option>
+                <option value="condado">Condado</option>
+            </optgroup>
+        </select><br><br>
+
+           <fieldset>
+            <legend>Qual é sua raça?</legend>
+            <input type="checkbox" name="espada" id="espada" value="espada"><label for="espada">Espada</label>
+            <input type="checkbox" name="arco e flecha" id="arco e flecha" value="arco e flecha"><label for="arco e flecha">Arco e flecha</label>
+            <input type="checkbox" name="magia" id="magia" value="magia"><label for="magia">magia</label>
+            <input type="checkbox" name="Furtividade Hobbit" id="Furtividade Hobbit" value="Furtividade Hobbit"><label for="Furtividade Hobbit">Furtividade Hobbit</label>
+        </fieldset><br><br>
+
+        <label for="nivel">Nível de coragem (1 a 10):</label>
+        <input type="range" max="1o" min="1" id="nivel" name="nivel"><br><br>
+
+           <label for="filme">Escolha seu filme favorito:</label>
+            <input type="text" id="busca_datalist" list="paises">
+            <datalist id="paises">
+                <option>Gondor</option>
+                <option>Rohan</option>
+                <option>Mordor</option>
+                <option>Condade</option>
+            </datalist><br><br>
+
+        <label for="cor">Cor do seu manto:</label>
+        <input type="color" id="cor" name="cor"><br><br>
+
+        <label for="data">Data da sua jornada</label>
+        <input type="date" name="data" id="data"><br><br>
+
+        <label for="aquivo">Anexe uma relíquea:</label>
+        <input type="file" id="arquivo" name="arquivo"><br><br>
+
+        <label for="descricao">Mensagem ao conselho:</label><br>
+        <textarea cols="30" rows="10" name="descricao" id="descricao" placeholder="Escreva sua missão..."></textarea><br><br>
+
+        <button type="reset">Apagar pergaminho</button>
+        <button type="submit">Enviar para Valfenda</button>
+        
+        <br><br>
+    <!--FIM----TRABALHO-->
+
+        <!--<label for="telefone">Telefone:</label>
         <input type="tel" name="telefone" id="telefone"
         placeholder="Informe seu telefone"><br><br>
 
@@ -117,7 +190,7 @@
         </fieldset><br>
         
 
-        <!--Possiveis ganhadores da copa do mundo-->
+       Possiveis ganhadores da copa do mundo
         <input type="text" id="busca_datalist" list="paises">
         <datalist id="paises">
             <option>Brasil</option>
